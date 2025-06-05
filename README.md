@@ -230,11 +230,11 @@ flowchart TD
     H --> END([Kết thúc - JSON Result])
     
     %% Styling
-    classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:3px
-    classDef process fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef decision fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef loop fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    classDef synthesis fill:#fff8e1,stroke:#f57f17,stroke-width:2px
+    classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:3px,color:#000
+    classDef process fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
+    classDef decision fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    classDef loop fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
+    classDef synthesis fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000
     
     class START,END startEnd
     class A,D,E,F process
@@ -260,10 +260,10 @@ flowchart TD
     R --> M
     
     %% Styling  
-    classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:3px
-    classDef process fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef decision fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
-    classDef chat fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef startEnd fill:#e1f5fe,stroke:#01579b,stroke-width:3px,color:#000
+    classDef process fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px,color:#000
+    classDef decision fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000
+    classDef chat fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000
     
     class START2,P startEnd
     class I,J,K,L,O,Q,R process
@@ -523,7 +523,7 @@ try:
     }
     
     for api, status in apis.items():
-        print(f'{"✅" if status else "❌"} {api}: {"SET" if status else "MISSING"}')
+        print(f"{'✅' if status else '❌'} {api}: {'SET' if status else 'MISSING'}")
         
     if all(apis.values()):
         print('🎉 System ready!')
